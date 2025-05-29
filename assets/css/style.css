@@ -65,6 +65,7 @@ nav a {
     line-height: 24px;
     text-align: center;
     color: var(--text-text-secondary, #2B2B2B);
+    margin-top: 30px;
 }
 
 .hero button {
@@ -78,8 +79,8 @@ nav a {
     text-align: center;
     background: var(--Color-Brand-Green, #285E67);
     color: var(--surface-surface-primary, #FFFFFF);
-    margin-bottom: 5.982vh;
-    margin-top: 2vh;
+    margin-bottom: 7.982vh;
+    margin-top: 3%;
     cursor: pointer;
 }
 
@@ -245,6 +246,7 @@ nav a {
     background: var(--text-text-invert, #F4F4F4);
     margin: 104px 70px 0 70px;
     padding: 56px 110px 56px 114px;
+    border-radius: 12px;
 }
 
 .more_info_left {
@@ -391,28 +393,29 @@ nav a {
 }
 
 footer {
+    height: 245px;
     background: var(--Color-Brand-Green, #285E67);
     display: grid;
     grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     align-items: center;
     justify-content: space-between;
-    height: 245px;
+}
+
+.footer_right {
+    width: 24.079vw;
 }
 
 .footer_left {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 30px;
     order: 3;
-}
-
-.footer_right {
-    width: 24.079vw;
-    order: 2;
 }
 
 .footer_left .logo {
     width: 88px;
+    order: 1;
 }
 
 .footer_left .social_icons {
@@ -423,6 +426,10 @@ footer {
 
 .social_icons img {
     width: 22px;
+}
+
+.footer_right {
+    order: 2;
 }
 
 .footer_right ul {
@@ -479,7 +486,7 @@ footer {
     }
 
     .more_info_right h2 {
-        text-align: center;      
+        text-align: center;
     }
 
     .infos .info_right,
@@ -504,12 +511,21 @@ footer {
         margin-bottom: 100px;
     }
 
-    footer {
-        grid-template-columns: repeat(1, 1fr);
+    footer .logo {
+        order: 1;
+    }
+
+    .footer_left {
+        order: 3;
+    }
+
+    .footer_right {
+        order: 2;
     }
 
     .footer_right ul {
-        gap: 40px;
+        width: 26.64vw;
+        gap: 10px;
     }
 }
 
@@ -580,6 +596,10 @@ footer {
         text-align: center;
     }
 
+    .services_list .list_item {
+        gap: 10px;
+    }
+
     .services_left {
         width: 100%;
     }
@@ -617,7 +637,7 @@ footer {
 
     .infos .info_left,
     .infos .info_right {
-        width: 60%;
+        width: 78.27%;
     }
 
     #team {
@@ -650,6 +670,11 @@ footer {
 
     footer {
         transform: translateY(400px);
+        height: 365px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .footer_right ul {
